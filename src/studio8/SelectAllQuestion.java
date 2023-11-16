@@ -3,9 +3,7 @@ package studio8;
 public class SelectAllQuestion extends MultipleChoiceQuestion {
 
 	public SelectAllQuestion(String prompt, String answer, String[] choices) {
-		//Hint: 1 point per choice
-		//FIXME
-		
+
 		super(prompt, answer, choices.length, choices);
 	}
 	
@@ -25,6 +23,7 @@ public class SelectAllQuestion extends MultipleChoiceQuestion {
 			}
 		}
 		return points - wrongAnswersSelected;
+
 	}
 	
 	public static void main(String[] args) {
